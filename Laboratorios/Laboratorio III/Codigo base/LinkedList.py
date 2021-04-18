@@ -1,11 +1,7 @@
 class Nodo():
-
     def __init__(self, elemento):
         self.elemento = elemento
-        self.siguiente = None       # Referencia al siguiente elemento.
-
-# acceder al i esimo elemento
-
+        self.siguiente = None       
 
 class LinkedList():
     def __init__(self):
