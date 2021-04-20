@@ -26,19 +26,19 @@ class LinkedList():
         if self.cabecera is None:
             return 0
         inicio_lista=self.cabecera
-
         while inicio_lista is not None:
             self.contador=self.contador+1
             inicio_lista=inicio_lista.siguiente
-        return self.contador
+            return self.contador
 
     def buscar_por_indice(self, indice):
         elemento_actual=self.cabecera
         while(elemento_actual):
-            if (self.contador==indice):
+            if (self.contador==indice-1):
                 return elemento_actual.elemento
             self.contador +=1
             elemento_actual=elemento_actual.siguiente
+            
 
     def imprimir_lista(self):
         if self.cabecera is None:
